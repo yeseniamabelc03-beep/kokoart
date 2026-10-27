@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kokoart</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <!-- barra superior -->
+    <nav class="navbar bg-cafe-oscuro px-3">
+        <div class="container-fluid">
+            <a class="navbar-brand fs-3 fw-bold text-white" href="#inicio">Kokoart</a>
+            <a class="btn btn-crema fw-bold" href="#precios">Precios</a>
+        </div>
+    </nav>
+
+    <header id="inicio" class="container-fluid bg-cafe text-white py-4">
+        <!-- seccion encabezado -->
+        <section class="row align-items-center g-4 px-2">
+            <div class="col-12">
+                <div class="row align-items-center mb-3">
+                    <div class="col-6 offset-3">
+                        <div class="ratio ratio-1x1">
+                            <img src="img/logo.jpg" alt="Logo de Kokoart" class="rounded-circle object-fit-cover">
+                        </div>
+                    </div>
+                    <div class="col-12 text-center mt-3">
+                        <h1 class="display-3 fw-bold mb-0">Kokoart</h1>
+                        <span class="badge rounded-pill bg-crema-claro texto-cafe-oscuro fs-6">Dibujos hechos a mano</span>
+                    </div>
+                </div>
+                <p class="fs-5">Una galería de dibujos con mucho cariño. Mira los trabajos y pide el tuyo, con la idea que tengas en mente.</p>
+                <div class="d-grid">
+                    <a class="btn btn-crema btn-lg fw-bold border-2" href="#pedido">Pide tu dibujo</a>
+                </div>
+            </div>
+            <div class="col-12">
+                <video class="w-100 rounded-4 border border-3 borde-cafe" controls>
+                    <source src="videos/dibujar.mp4" type="video/mp4">
+                    Tu navegador no soporta el video.
+                </video>
+            </div>
+        </section>
+    </header>
+
+    <main class="container-fluid">
+        <!-- seccion galeria -->
+        <section id="galeria" class="row py-4 px-2">
+            <div class="col-12">
+                <h2 class="display-5 fw-bold texto-cafe-oscuro mb-3">Galería</h2>
+            </div>
+
+            <div class="col-12">
+                <div class="row g-3">
+
+                    <!-- dibujo 1 Paisajes -->
+                    <article class="col-12">
+                        <div class="h-100 rounded-4 border border-3 borde-cafe bg-crema-claro overflow-hidden">
+                            <img src="img/paisajes.jpg" alt="Paisaje dibujado a mano" class="img-fluid w-100">
+                            <div class="p-4">
+                                <h3 class="display-6 fw-bold texto-cafe-oscuro">Paisajes</h3>
+                                <p class="fs-4 mb-0">Paisajes pintados a mano.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- dibujo 2 mascota en acuarela -->
+                    <article class="col-12">
+                        <div class="h-100 rounded-4 border border-3 borde-cafe bg-rosa-durazno overflow-hidden">
+                            <img src="img/conejocompleto.jpeg" alt="Mascota dibujada a acuarela" class="img-fluid w-100">
+                            <div class="p-4">
+                                <h3 class="display-6 fw-bold texto-cafe-oscuro">Mascota en acuarela</h3>
+                                <p class="fs-4 mb-0">Mascotas pintadas a acuarela.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- dibujo 3 estilo anime -->
+                    <article class="col-12">
+                        <div class="h-100 rounded-4 border border-3 borde-cafe bg-crema-claro overflow-hidden">
+                            <img src="img/Ilustracion3.jpg.jpeg" alt="Dibujo en estilo anime" class="img-fluid w-100">
+                            <div class="p-4">
+                                <h3 class="display-6 fw-bold texto-cafe-oscuro">Estilo anime</h3>
+                                <p class="fs-4 mb-0">Dibujos en estilo anime, con personajes expresivos y líneas limpias.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- dibujo 4 mascota con esfero -->
+                    <article class="col-12">
+                        <div class="h-100 rounded-4 border border-3 borde-cafe bg-rosa-durazno overflow-hidden">
+                            <img src="img/conejo.jpeg" alt="Mascota dibujada con esfero" class="img-fluid w-100">
+                            <div class="p-4">
+                                <h3 class="display-6 fw-bold texto-cafe-oscuro">Mascota con esfero</h3>
+                                <p class="fs-4 mb-0">Mascotas dibujadas solo con esfero, con líneas finas y mucho detalle.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- dibujo 5: ilustracion a lapiz -->
+                    <article class="col-12">
+                        <div class="h-100 rounded-4 border border-3 borde-cafe bg-crema-claro overflow-hidden">
+                            <img src="img/Ilustracion.jpg.jpeg" alt="Ilustración a lápiz" class="img-fluid w-100">
+                            <div class="p-4">
+                                <h3 class="display-6 fw-bold texto-cafe-oscuro">Ilustración a lápiz</h3>
+                                <p class="fs-4 mb-0">Ilustraciones hechas a lápiz, con sombras suaves y trazos delicados.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- seccion tipos de dibujo -->
+        <section class="row py-4 px-2">
+            <div class="col-12">
+                <h2 class="display-6 fw-bold texto-cafe-oscuro text-center mb-3">Tipos de dibujo disponibles</h2>
+            </div>
+            <div class="col-12">
+                <ul class="list-unstyled row g-3 mb-0">
+                    <li class="col-12">
+                        <div class="h-100 p-3 text-center rounded-4 border border-3 borde-cafe bg-celeste-claro">
+                            <h3 class="h4 fw-bold texto-cafe-oscuro">Estilo anime</h3>
+                            <p class="mb-0">Cualquier idea en anime a lápiz o esfero.</p>
+                        </div>
+                    </li>
+                    <li class="col-12">
+                        <div class="h-100 p-3 text-center rounded-4 border border-3 borde-cafe bg-durazno-claro">
+                            <h3 class="h4 fw-bold texto-cafe-oscuro">Mascotas</h3>
+                            <p class="mb-0">Ideales para regalar, pueden ser a acuarela o esfero.</p>
+                        </div>
+                    </li>
+                    <li class="col-12">
+                        <div class="h-100 p-3 text-center rounded-4 border border-3 borde-cafe bg-azul-suave">
+                            <h3 class="h4 fw-bold texto-cafe-oscuro">Dibujos a lapiz</h3>
+                            <p class="mb-0">Dibujos a lápiz con detalles y sombras que dan vida a cada creación.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ubicacion, precios y formulario -->
+        <div class="row g-3 bg-rosa-durazno py-4 px-2 mt-0">
+            <div class="col-12">
+                <div class="row g-3">
+                    <!-- seccion ubicacion -->
+                    <section id="ubicacion" class="col-12">
+                        <h2 class="display-6 fw-bold texto-cafe-oscuro mb-3">Ubicación</h2>
+                        <iframe src="https://www.google.com/maps?q=Terminal+Terrestre+Quitumbe,Quito,Ecuador&output=embed"
+                            title="Ubicación de Kokoart" class="rounded-4 border border-3 borde-cafe w-100" style="min-height: 250px;" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </section>
+
+                    <!-- seccion precios -->
+                    <section id="precios" class="col-12">
+                        <h2 class="display-6 fw-bold texto-cafe-oscuro mb-3">Precios</h2>
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-striped align-middle bg-white mb-0">
+                                <thead class="table-cafe">
+                                    <tr>
+                                        <th>Técnica</th>
+                                        <th>Tamaño</th>
+                                        <th>Precio</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Lápiz</td>
+                                        <td>A5 (15 × 21 cm)</td>
+                                        <td>$4</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Lápiz</td>
+                                        <td>A4 (21 × 30 cm)</td>
+                                        <td>$6</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Esfero</td>
+                                        <td>A4 (21 × 30 cm)</td>
+                                        <td>$4</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Acuarela</td>
+                                        <td>A4 (21 × 30 cm)</td>
+                                        <td>$3</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <!-- seccion formulario -->
+            <section id="pedido" class="col-12">
+                <div class="p-3 h-100 bg-crema rounded-4 border border-3 borde-cafe">
+                    <h2 class="display-6 fw-bold texto-cafe-oscuro">Haz tu pedido</h2>
+                    <form action="#" method="post">
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label fw-semibold">Nombre</label>
+                            <input type="text" class="form-control borde-cafe" id="nombre" name="nombre" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="correo" class="form-label fw-semibold">Correo</label>
+                            <input type="email" class="form-control borde-cafe" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefono" class="form-label fw-semibold">Teléfono</label>
+                            <input type="tel" class="form-control borde-cafe" id="telefono" name="telefono" placeholder="0991234567" inputmode="numeric" pattern="[0-9]{10}" maxlength="10" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="tipo" class="form-label fw-semibold">Tipo de dibujo</label>
+                            <select class="form-select borde-cafe" id="tipo" name="tipo" required>
+                                <option value="" selected>Selecciona...</option>
+                                <option>Estilo anime</option>
+                                <option>Mascota</option>
+                                <option>Paisajes</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="tecnica" class="form-label fw-semibold">Técnica</label>
+                            <select class="form-select borde-cafe" id="tecnica" name="tecnica" required>
+                                <option value="" selected>Selecciona...</option>
+                                <option>Lápiz</option>
+                                <option>Esfero</option>
+                                <option>Acuarela</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label fw-semibold">Mensaje</label>
+                            <textarea class="form-control borde-cafe" id="mensaje" name="mensaje" rows="4" placeholder="Cuéntame tu idea: colores, tamaño, fecha..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-cafe w-100 fw-bold">Enviar pedido</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="container-fluid bg-cafe-oscuro text-white p-4">
+        <div class="row align-items-center g-3">
+            <section class="col-12 text-center">
+                <p class="fs-2 fw-bold mb-0">Kokoart</p>
+            </section>
+            <section class="col-12 text-center">
+                <p class="mb-2 fw-semibold">Síguenos en nuestras redes sociales</p>
+                <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram" class="text-white fs-2 mx-2"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook" class="text-white fs-2 mx-2"><i class="bi bi-facebook"></i></a>
+                <a href="https://wa.me/593000000000" target="_blank" aria-label="WhatsApp" class="text-white fs-2 mx-2"><i class="bi bi-whatsapp"></i></a>
+                <p class="mt-3 mb-1">Teléfono: 099 999 9999</p>
+                <p class="mb-1">Correo: Kokoart@gmail.com</p>
+            </section>
+        </div>
+    </footer>
+</body>
+</html>

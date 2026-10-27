@@ -1,0 +1,65 @@
+:root {
+    --cafe-oscuro: #180d0b;
+    --cafe: #352d29;
+    --crema: #fff1da;
+    --crema-claro: #fff7ec;
+    --rosa-durazno: #f8dccf;
+    --durazno-claro: #fce9d1;
+    --celeste-claro: #d6e9ec;
+    --azul-suave: #cadbee;
+}
+
+body, h1, h2, h3, h4, h5, h6, .btn, .form-control, .form-select {
+    font-family: 'Fredoka', sans-serif;
+}
+
+/* Colores de fondo */
+.bg-cafe-oscuro { background-color: var(--cafe-oscuro); }
+.bg-cafe { background-color: var(--cafe); }
+.bg-crema { background-color: var(--crema); }
+.bg-crema-claro { background-color: var(--crema-claro); }
+.bg-rosa-durazno { background-color: var(--rosa-durazno); }
+.bg-durazno-claro { background-color: var(--durazno-claro); }
+.bg-celeste-claro { background-color: var(--celeste-claro); }
+.bg-azul-suave { background-color: var(--azul-suave); }
+
+/* Colores de texto */
+body { color: var(--cafe-oscuro); }
+.texto-cafe-oscuro { color: var(--cafe-oscuro); }
+.texto-cafe { color: var(--cafe); }
+
+/* Color de bordes */
+.borde-cafe { border-color: var(--cafe) !important; }
+
+/* Botones */
+.btn-crema {
+    background-color: var(--crema-claro);
+    border-color: var(--cafe-oscuro);
+    color: var(--cafe-oscuro);
+}
+
+.btn-cafe {
+    background-color: var(--cafe);
+    border-color: var(--cafe-oscuro);
+    color: #fff;
+}
+
+.btn-cafe:hover, .btn-cafe:focus, .btn-cafe:active {
+    background-color: var(--cafe-oscuro);
+    border-color: var(--cafe-oscuro);
+    color: #fff;
+}
+
+.btn-crema:hover, .btn-crema:focus, .btn-crema:active {
+    background-color: var(--crema);
+    border-color: var(--cafe-oscuro);
+    color: var(--cafe-oscuro);
+}
+/* Tabla*/
+.table-cafe {
+    --bs-table-bg: var(--cafe);
+    --bs-table-color: #fff;
+}
+/*  Enlaces */
+a { color: var(--cafe); }
+a:hover { color: var(--cafe-oscuro); }
