@@ -23,24 +23,25 @@
     <header id="inicio" class="container-fluid bg-cafe text-white py-4">
         <!-- seccion encabezado -->
         <section class="row align-items-center g-4 px-2">
-            <div class="col-12">
+            <div class="col-12 col-md-7 col-xl-8">
+                <!-- logo y titulo movil apilados y centrados | tablet y PC lado a lado -->
                 <div class="row align-items-center mb-3">
-                    <div class="col-6 offset-3">
+                    <div class="col-6 offset-3 col-md-5 offset-md-0 col-xl-4">
                         <div class="ratio ratio-1x1">
                             <img src="img/logo.jpg" alt="Logo de Kokoart" class="rounded-circle object-fit-cover">
                         </div>
                     </div>
-                    <div class="col-12 text-center mt-3">
+                    <div class="col-12 col-md-7 col-xl-8 text-center text-md-start mt-3 mt-md-0">
                         <h1 class="display-3 fw-bold mb-0">Kokoart</h1>
                         <span class="badge rounded-pill bg-crema-claro texto-cafe-oscuro fs-6">Dibujos hechos a mano</span>
                     </div>
                 </div>
                 <p class="fs-5">Una galería de dibujos con mucho cariño. Mira los trabajos y pide el tuyo, con la idea que tengas en mente.</p>
-                <div class="d-grid">
+                <div class="d-grid d-md-block">
                     <a class="btn btn-crema btn-lg fw-bold border-2" href="#pedido">Pide tu dibujo</a>
                 </div>
             </div>
-            <div class="col-12">
+            <div class="col-12 col-md-5 col-xl-4">
                 <video class="w-100 rounded-4 border border-3 borde-cafe" controls>
                     <source src="videos/dibujar.mp4" type="video/mp4">
                     Tu navegador no soporta el video.
@@ -50,7 +51,7 @@
     </header>
 
     <main class="container-fluid">
-        <!-- seccion galeria -->
+        <!-- seccion galeria movil 1 por fila | tablet 2 columnas | PC 1 por fila -->
         <section id="galeria" class="row py-4 px-2">
             <div class="col-12">
                 <h2 class="display-5 fw-bold texto-cafe-oscuro mb-3">Galería</h2>
@@ -59,57 +60,88 @@
             <div class="col-12">
                 <div class="row g-3">
 
-                    <!-- dibujo 1 Paisajes -->
-                    <article class="col-12">
+                    <!-- dibujo 1: paisajes movil y tablet: imagen arriba y texto abajo
+                         PC: texto a la izquierda e imagen a la derecha -->
+                    <article class="col-12 col-md-6 col-xl-12">
                         <div class="h-100 rounded-4 border border-3 borde-cafe bg-crema-claro overflow-hidden">
-                            <img src="img/paisajes.jpg" alt="Paisaje dibujado a mano" class="img-fluid w-100">
-                            <div class="p-4">
-                                <h3 class="display-6 fw-bold texto-cafe-oscuro">Paisajes</h3>
-                                <p class="fs-4 mb-0">Paisajes pintados a mano.</p>
+                            <div class="row g-0 h-100 align-items-center">
+                                <div class="col-12 col-xl-5 order-xl-last">
+                                    <img src="img/paisajes.jpg" alt="Paisaje dibujado a mano" class="img-fluid w-100">
+                                </div>
+                                <div class="col-12 col-xl-7">
+                                    <div class="p-4">
+                                        <h3 class="display-6 fw-bold texto-cafe-oscuro">Paisajes</h3>
+                                        <p class="fs-4 mb-0">Paisajes pintados a mano.</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </article>
 
-                    <!-- dibujo 2 mascota en acuarela -->
-                    <article class="col-12">
+                    <!-- dibujo 2: mascota en acuarela -->
+                    <article class="col-12 col-md-6 col-xl-12">
                         <div class="h-100 rounded-4 border border-3 borde-cafe bg-rosa-durazno overflow-hidden">
-                            <img src="img/conejocompleto.jpeg" alt="Mascota dibujada a acuarela" class="img-fluid w-100">
-                            <div class="p-4">
-                                <h3 class="display-6 fw-bold texto-cafe-oscuro">Mascota en acuarela</h3>
-                                <p class="fs-4 mb-0">Mascotas pintadas a acuarela.</p>
+                            <div class="row g-0 h-100 align-items-center">
+                                <div class="col-12 col-xl-5 order-xl-last">
+                                    <img src="img/conejocompleto.jpeg" alt="Mascota dibujada a acuarela" class="img-fluid w-100">
+                                </div>
+                                <div class="col-12 col-xl-7">
+                                    <div class="p-4">
+                                        <h3 class="display-6 fw-bold texto-cafe-oscuro">Mascota en acuarela</h3>
+                                        <p class="fs-4 mb-0">Mascotas pintadas a acuarela.</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </article>
 
-                    <!-- dibujo 3 estilo anime -->
-                    <article class="col-12">
+                    <!-- dibujo 3: estilo anime -->
+                    <article class="col-12 col-md-6 col-xl-12">
                         <div class="h-100 rounded-4 border border-3 borde-cafe bg-crema-claro overflow-hidden">
-                            <img src="img/Ilustracion3.jpg.jpeg" alt="Dibujo en estilo anime" class="img-fluid w-100">
-                            <div class="p-4">
-                                <h3 class="display-6 fw-bold texto-cafe-oscuro">Estilo anime</h3>
-                                <p class="fs-4 mb-0">Dibujos en estilo anime, con personajes expresivos y líneas limpias.</p>
+                            <div class="row g-0 h-100 align-items-center">
+                                <div class="col-12 col-xl-5 order-xl-last">
+                                    <img src="img/Ilustracion3.jpg.jpeg" alt="Dibujo en estilo anime" class="img-fluid w-100">
+                                </div>
+                                <div class="col-12 col-xl-7">
+                                    <div class="p-4">
+                                        <h3 class="display-6 fw-bold texto-cafe-oscuro">Estilo anime</h3>
+                                        <p class="fs-4 mb-0">Dibujos en estilo anime, con personajes expresivos y líneas limpias.</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </article>
 
-                    <!-- dibujo 4 mascota con esfero -->
-                    <article class="col-12">
+                    <!-- dibujo 4: mascota con esfero -->
+                    <article class="col-12 col-md-6 col-xl-12">
                         <div class="h-100 rounded-4 border border-3 borde-cafe bg-rosa-durazno overflow-hidden">
-                            <img src="img/conejo.jpeg" alt="Mascota dibujada con esfero" class="img-fluid w-100">
-                            <div class="p-4">
-                                <h3 class="display-6 fw-bold texto-cafe-oscuro">Mascota con esfero</h3>
-                                <p class="fs-4 mb-0">Mascotas dibujadas solo con esfero, con líneas finas y mucho detalle.</p>
+                            <div class="row g-0 h-100 align-items-center">
+                                <div class="col-12 col-xl-5 order-xl-last">
+                                    <img src="img/conejo.jpeg" alt="Mascota dibujada con esfero" class="img-fluid w-100">
+                                </div>
+                                <div class="col-12 col-xl-7">
+                                    <div class="p-4">
+                                        <h3 class="display-6 fw-bold texto-cafe-oscuro">Mascota con esfero</h3>
+                                        <p class="fs-4 mb-0">Mascotas dibujadas solo con esfero, con líneas finas y mucho detalle.</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </article>
 
-                    <!-- dibujo 5: ilustracion a lapiz -->
-                    <article class="col-12">
+                    <!-- dibujo 5: ilustracion a lapiz  -->
+                    <article class="col-12 col-md-12 col-xl-12">
                         <div class="h-100 rounded-4 border border-3 borde-cafe bg-crema-claro overflow-hidden">
-                            <img src="img/Ilustracion.jpg.jpeg" alt="Ilustración a lápiz" class="img-fluid w-100">
-                            <div class="p-4">
-                                <h3 class="display-6 fw-bold texto-cafe-oscuro">Ilustración a lápiz</h3>
-                                <p class="fs-4 mb-0">Ilustraciones hechas a lápiz, con sombras suaves y trazos delicados.</p>
+                            <div class="row g-0 h-100 align-items-center">
+                                <div class="col-12 col-xl-5 order-xl-last">
+                                    <img src="img/Ilustracion.jpg.jpeg" alt="Ilustración a lápiz" class="img-fluid w-100">
+                                </div>
+                                <div class="col-12 col-xl-7">
+                                    <div class="p-4">
+                                        <h3 class="display-6 fw-bold texto-cafe-oscuro">Ilustración a lápiz</h3>
+                                        <p class="fs-4 mb-0">Ilustraciones hechas a lápiz, con sombras suaves y trazos delicados.</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </article>
@@ -118,28 +150,28 @@
             </div>
         </section>
 
-        <!-- seccion tipos de dibujo -->
+        <!-- seccion tipos de dibujo mvil 1 columna | tablet y PC 3 columnas -->
         <section class="row py-4 px-2">
             <div class="col-12">
                 <h2 class="display-6 fw-bold texto-cafe-oscuro text-center mb-3">Tipos de dibujo disponibles</h2>
             </div>
             <div class="col-12">
                 <ul class="list-unstyled row g-3 mb-0">
-                    <li class="col-12">
+                    <li class="col-12 col-md-4">
                         <div class="h-100 p-3 text-center rounded-4 border border-3 borde-cafe bg-celeste-claro">
                             <h3 class="h4 fw-bold texto-cafe-oscuro">Estilo anime</h3>
                             <p class="mb-0">Cualquier idea en anime a lápiz o esfero.</p>
                         </div>
                     </li>
-                    <li class="col-12">
+                    <li class="col-12 col-md-4">
                         <div class="h-100 p-3 text-center rounded-4 border border-3 borde-cafe bg-durazno-claro">
                             <h3 class="h4 fw-bold texto-cafe-oscuro">Mascotas</h3>
                             <p class="mb-0">Ideales para regalar, pueden ser a acuarela o esfero.</p>
                         </div>
                     </li>
-                    <li class="col-12">
+                    <li class="col-12 col-md-4">
                         <div class="h-100 p-3 text-center rounded-4 border border-3 borde-cafe bg-azul-suave">
-                            <h3 class="h4 fw-bold texto-cafe-oscuro">Dibujos a lapiz</h3>
+                            <h3 class="h4 fw-bold texto-cafe-oscuro">Dibujos a lápiz</h3>
                             <p class="mb-0">Dibujos a lápiz con detalles y sombras que dan vida a cada creación.</p>
                         </div>
                     </li>
@@ -147,20 +179,23 @@
             </div>
         </section>
 
-        <!-- ubicacion, precios y formulario -->
+        <!-- ubicacion y precios | formulario: movil y tablet apilados | PC dos mitades -->
         <div class="row g-3 bg-rosa-durazno py-4 px-2 mt-0">
-            <div class="col-12">
+
+            <!-- mitad izquierda en PC mapa y precios -->
+            <div class="col-12 col-xl-6">
                 <div class="row g-3">
-                    <!-- seccion ubicacion -->
-                    <section id="ubicacion" class="col-12">
+
+                    <!-- seccion ubicacion móvil apilado | tablet junto a precios | PC arriba de precios -->
+                    <section id="ubicacion" class="col-12 col-md-6 col-xl-12">
                         <h2 class="display-6 fw-bold texto-cafe-oscuro mb-3">Ubicación</h2>
                         <iframe src="https://www.google.com/maps?q=Terminal+Terrestre+Quitumbe,Quito,Ecuador&output=embed"
-                            title="Ubicación de Kokoart" class="rounded-4 border border-3 borde-cafe w-100" style="min-height: 250px;" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                title="Ubicación de Kokoart" class="rounded-4 border border-3 borde-cafe w-100" style="min-height: 250px;" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </section>
 
-                    <!-- seccion precios -->
-                    <section id="precios" class="col-12">
+                    <!-- seccion precios misma disposición que ubicación -->
+                    <section id="precios" class="col-12 col-md-6 col-xl-12">
                         <h2 class="display-6 fw-bold texto-cafe-oscuro mb-3">Precios</h2>
                         <div class="table-responsive">
                             <table class="table table-bordered table-striped align-middle bg-white mb-0">
@@ -196,11 +231,12 @@
                             </table>
                         </div>
                     </section>
+
                 </div>
             </div>
 
-            <!-- seccion formulario -->
-            <section id="pedido" class="col-12">
+            <!-- seccion formulario ancho completo en movil y tablet | mitad derecha en PC -->
+            <section id="pedido" class="col-12 col-xl-6">
                 <div class="p-3 h-100 bg-crema rounded-4 border border-3 borde-cafe">
                     <h2 class="display-6 fw-bold texto-cafe-oscuro">Haz tu pedido</h2>
                     <form action="#" method="post">
@@ -242,16 +278,17 @@
                     </form>
                 </div>
             </section>
+
         </div>
     </main>
 
-    <!-- footer -->
+    <!-- footer: movil todo centrado | tablet y PC nombre a la izquierda, redes y contacto a la derecha -->
     <footer class="container-fluid bg-cafe-oscuro text-white p-4">
         <div class="row align-items-center g-3">
-            <section class="col-12 text-center">
+            <section class="col-12 col-md-6 text-center text-md-start">
                 <p class="fs-2 fw-bold mb-0">Kokoart</p>
             </section>
-            <section class="col-12 text-center">
+            <section class="col-12 col-md-6 text-center text-md-end">
                 <p class="mb-2 fw-semibold">Síguenos en nuestras redes sociales</p>
                 <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram" class="text-white fs-2 mx-2"><i class="bi bi-instagram"></i></a>
                 <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook" class="text-white fs-2 mx-2"><i class="bi bi-facebook"></i></a>
